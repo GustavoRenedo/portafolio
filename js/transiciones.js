@@ -41,10 +41,3 @@ sr.reveal('#contacto', {
     origin: 'bottom',
     distance: '100px'
 });
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 05eb49d77c9e5e1cc131d2f86d40c8486f3c3b5c
