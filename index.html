@@ -9,7 +9,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
-    <title>GL Desarrollador Web</title>
+    <title>GustavoL Desarrollador Web</title>
 
     <!--Transiciones-->
     <script src="scroll-reveal/lib-scroll-reveal.js"></script>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </header>
-            <div class="presentacion">
+            <div class="presentacion ocultar">  <!--CAMBIO AQUI-->
                 <p class="bienvenida">Bienvenidos a mí web</p>
                 <h2>Hola, Soy <span>Gustavo López</span>, Desarrollador Web</h2>
                 <p class="descripcion">Soy un apasionado desarrollador con un compromiso inquebrantable por crear experiencias en línea sorprendentes y funcionales. Con una mezcla de creatividad y habilidades técnicas, transformo ideas en sitios web atractivos y fáciles de usar.</p>
@@ -55,7 +55,7 @@
     </section>
 
     <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
+    <section id="sobremi" class="ocultar"> <!--CAMBIO AQUI-->
         <div class="contenedor-foto">
             <img src="img/gustavolopez.jpg" alt="">
         </div>
@@ -72,8 +72,8 @@
 
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
-        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-        <div class="fila">
+        <h3 class="titulo-seccion ocultar">MIS SERVICIOS</h3> <!--CAMBIO AQUI-->
+        <div class="fila ocultar"> <!--CAMBIO AQUI-->
             <div class="servicio">
                 <span class="icono"> <i class="fa-solid fa-code"></i></span>
                 <h4>Diseño de Sitios Web</h4>
@@ -110,7 +110,7 @@
                 </p>
             </div>
         </div>
-        <div class="fila">
+        <div class="fila ocultar"> <!--CAMBIO AQUI-->
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-database"></i></span>
                 <h4>Alojamiento de Sitios</h4>
@@ -232,7 +232,7 @@
     </div>
 
     <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
+    <section id="portfolio" class="ocultar"> <!--CAMBIO AQUI-->
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
             <div class="proyecto">
@@ -289,7 +289,7 @@
     </section>
 
     <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
+    <section id="contacto" class="ocultar">
         <h3 class="titulo-seccion">Contactame</h3>
         <div class="contenedor-form">
             <form action="">
@@ -323,6 +323,16 @@
 
     <script src="js/script.js"></script>
     <script src="js/scroll1.js"></script>
+
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKLZDED12D"></script>
+     <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+ 
+           gtag('config', 'G-GKLZDED12D');
+     </script>
 </body>
 
 </html>
