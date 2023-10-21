@@ -28,12 +28,18 @@ sr.reveal('.fila', {
     distance: '100px'
 });
 
-//filas de servicios
-sr.reveal('#skills', {
+//portafolio
+sr.reveal('#portafolio', {
     duration: 3000,
-    origin: 'rigth',
+    origin: 'bottom',
     distance: '100px'
 });
 
+//contacto
+sr.reveal('#contacto', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '100px'
+});
 
 
