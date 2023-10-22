@@ -2,7 +2,7 @@ const sr = ScrollReveal();
 
 //Bienvenida
 sr.reveal('.presentacion', {
-    duration: 4000,
+    duration: 3000,
     origin: 'left',
     distance: '200px'
 });
