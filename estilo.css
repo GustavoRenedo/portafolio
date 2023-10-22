@@ -297,7 +297,7 @@
         /* *********************/
 
         .contenedor-skills {
-            background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient(#38b6a1, rgba(58, 26, 26, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -664,8 +664,4 @@
         /*Ocultar*/
         .ocultar {
             visibility: hidden;
-<<<<<<< HEAD
         }
-=======
-        }
->>>>>>> 05eb49d77c9e5e1cc131d2f86d40c8486f3c3b5c
