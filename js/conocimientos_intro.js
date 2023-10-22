@@ -6,7 +6,8 @@ const textos = [
     "JavaScript.",
     "PHP.",
     "SQL.",
-    "APIs."
+    "APIs.",
+    "Photoshop"
   ];
   
   const introElement = document.getElementById("dynamicText");
