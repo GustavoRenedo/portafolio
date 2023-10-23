@@ -41,7 +41,7 @@
             padding: 10px 20px;
         }
 
-        #inicio .contenido header .contenido-header h1 {
+        #inicio .contenido header .contenido-header h2 {
             text-align: center;
             color: var(--primary-color);
         }
@@ -98,13 +98,13 @@
             letter-spacing: 5px;
         }
 
-        #inicio .contenido .presentacion h2 {
+        #inicio .contenido .presentacion h1 {
             font-size: 55px;
             margin-bottom: 25px;
             text-align: center;
         }
 
-        #inicio .contenido .presentacion h2 span {
+        #inicio .contenido .presentacion h1 span {
             font-size: 25px;
             color: var(--primary-color);
         }
@@ -294,6 +294,7 @@
         #servicios .fila .servicio p {
             font-size: 14px;
             line-height: 22px;
+            text-align: justify;
         }
 
         /* *********************/
