@@ -535,6 +535,11 @@
             color: #fff;
         }
 
+        /*Ocultar*/
+        .ocultar {
+            visibility: hidden;
+        }
+
         /* *********************/
         /* seccion F O O T E R */
         /* *********************/
@@ -590,7 +595,7 @@
                 display: block;
             }
 
-            #inicio .contenido .presentacion h2 {
+            #inicio .contenido .presentacion h1 {
                 font-size: 40px;
             }
 
@@ -666,7 +671,4 @@
             }
         }
 
-        /*Ocultar*/
-        .ocultar {
-            visibility: hidden;
-        }
+        
