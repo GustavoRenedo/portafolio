@@ -35,6 +35,16 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.style.display = "none";
+        });
+    </script>
     <!-- SECCION I N I C I O -->
     <section id="inicio">
         <div class="contenido">

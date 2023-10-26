@@ -85,12 +85,19 @@ function seleccionar(link) {
 //función que muestra el menu responsive
 function responsiveMenu() {
     var x = document.getElementById("nav");
+    var icono = document.getElementById("icono-nav");
+
     if (x.className === "") {
         x.className = "responsive";
+        // Cambiar el ícono a "X" cuando se abre el menú
+        icono.innerHTML = '<i class="fa-solid fa-times"></i>';
     } else {
         x.className = "";
+        // Cambiar el ícono a la barra cuando se cierra el menú
+        icono.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 }
+
 
 /*FINALIZACION DE RESPONSIVO Y MENU SELECCIONAR*/
 
