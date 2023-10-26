@@ -14,44 +14,7 @@
         }
 
 
-
-        /*Seccion de carga del PRELOADER*/
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .content {
-            display: none;
-            /* Oculta el contenido mientras se carga la página */
-        }
+        /*LOADER*/
 
         /* *********************/
         /* seccion I N I C I O */
@@ -85,7 +48,6 @@
             text-align: center;
             color: var(--primary-color);
         }
-
 
         #inicio .contenido header .contenido-header nav ul {
             list-style: none;
@@ -149,8 +111,7 @@
             font-size: 25px;
             color: var(--primary-color);
         }
-
-        #inicio .contenido .presentacion .conocimientos {
+        #inicio .contenido .presentacion .conocimientos{
             font-size: 20px;
             text-align: center;
         }
@@ -605,12 +566,11 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
 
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1100px){
             #servicios .fila .servicio ul {
                 flex-direction: column;
                 align-items: center;
             }
-
             #servicios .fila .servicio ul li {
                 width: 100%;
                 padding: 2px;
@@ -692,7 +652,7 @@
             #servicios .fila .servicio {
                 margin: 10px auto;
             }
-
+            
 
             /* seccion HABLIDADES MI */
             .contenedor-skills {
@@ -727,3 +687,5 @@
                 margin-bottom: 15px;
             }
         }
+
+        
