@@ -21,7 +21,7 @@
         /* *********************/
 
         #inicio {
-            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/programacion_web_desarrollador.jpg");
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/programacion_web_desarrollador.jpg");
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -145,6 +145,92 @@
             color: #fff;
             display: none;
         }
+
+        /* *********************/
+        /* carpeta P R O Y E C T O S */
+        /* *********************/
+
+        #proyectos {
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/programacion_web_desarrollador.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 40vh;
+            position: relative;
+        }
+
+        #proyectos .contenido header {
+            background-color: rgba(0, 0, 0, .8);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+
+        #proyectos .contenido header .contenido-header {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #proyectos .contenido header .contenido-header h2 {
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        #proyectos .contenido header .contenido-header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        #proyectos .contenido header .contenido-header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 12px;
+            font-weight: 400;
+            transition: .5s;
+        }
+
+        #proyectos .contenido header .contenido-header nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        #proyectos .contenido header .contenido-header .redes a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin-left: 10px;
+            transition: .5s;
+        }
+
+        #proyectos .contenido header .contenido-header .redes a:hover {
+            color: var(--primary-color);
+        }
+
+        #proyectos .contenido header .contenido-header .seleccionado {
+            color: var(--primary-color);
+        }
+
+        #proyectos .contenido .presentacion{
+            position: absolute;
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+
+
+
 
         /* *********************/
         /* seccion S O B R E  M I */
@@ -306,7 +392,7 @@
         /* *********************/
 
         .contenedor-skills {
-            background: linear-gradient(#2d8a7a, rgba(34, 16, 16, 0.8)), url("img/desarrollo_web_bosque_naturaleza.jpg");
+            background: linear-gradient(#2d8a7a, rgba(34, 16, 16, 0.8)), url("../img/desarrollo_web_bosque_naturaleza.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -477,8 +563,8 @@
         /* seccion C O N T A C T O */
         /* *********************/
 
-        .mensaje{
-            background: linear-gradient(#2d8a7a, rgba(34, 16, 16, 0.8)), url("img/medio-de-contacto-informacion-desarrollo.gif");
+        .mensaje {
+            background: linear-gradient(#2d8a7a, rgba(34, 16, 16, 0.8)), url("../img/medio-de-contacto-informacion-desarrollo.gif");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -515,7 +601,7 @@
             margin-bottom: 15px;
             font-size: 35px
         }
-        
+
 
         .container-form .oracion {
             font-size: 17px;
@@ -538,7 +624,7 @@
             margin-right: 10px;
         }
 
-        .container-form .redes-sociales a{
+        .container-form .redes-sociales a {
             color: var(--primary-color);
             font-size: 30px;
             padding-right: 15px;
@@ -659,6 +745,9 @@
             #inicio .contenido .presentacion h1 {
                 font-size: 40px;
             }
+            #proyectos .contenido .presentacion{
+                font-size: 30px;
+            }
 
 
             /* seccion SOBRE MI */
@@ -729,6 +818,7 @@
                 grid-template-columns: 1fr;
                 grid-gap: 20px;
             }
+            
 
             .container-form form .campo,
             .container-form form textarea {
