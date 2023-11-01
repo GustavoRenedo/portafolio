@@ -563,7 +563,7 @@
         /* seccion C O N T A C T O */
         /* *********************/
 
-        .mensaje {
+        #contacto {
             background: linear-gradient(#2d8a7a, rgba(34, 16, 16, 0.8)), url("../img/medio-de-contacto-informacion-desarrollo.gif");
             background-attachment: fixed;
             background-repeat: no-repeat;
