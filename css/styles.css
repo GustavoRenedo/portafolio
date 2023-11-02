@@ -299,7 +299,8 @@
         }
 
         #sobremi .sobremi a {
-            display: inline-block;
+            display: block;
+            text-align: center;
             text-decoration: none;
             color: #000;
             border-radius: 30px;
@@ -307,6 +308,7 @@
             padding: 10px 20px;
             margin-top: 30px;
             transition: .5s;
+            margin: 0 auto;
         }
 
         #sobremi .sobremi a:hover {
@@ -365,14 +367,14 @@
         }
 
         .curriculum .fila .item h4 {
-            font-size: 20px;
+            font-size: 19px;
             margin-bottom: 10px;
             color: rgb(255, 255, 255);
         }
 
         .curriculum .fila .item .casa {
             color: var(--primary-color);
-            font-size: 22px;
+            font-size: 17px;
             font-weight: bold;
             display: block;
         }
@@ -981,11 +983,12 @@
                 display: block;
             }
             .curriculum .fila .col{
-                width: 90%;
+                width: 100%;
             }
             .curriculum .fila .derecha{
                 margin-left: 20px;
             }
+            
         }
 
         @media (max-width: 480px) {
@@ -1007,5 +1010,26 @@
 
             .container-form .btn-enviar {
                 width: 100%;
+            }
+            .curriculum {
+                
+                padding: 50px 10px;
+            }
+
+            .curriculum .fila .item {
+                padding: 15px;
+                
+            }
+
+            .curriculum .fila .item h4 {
+                text-align: center;
+                font-size: 16px;
+            }
+            .curriculum .fila .item .casa {
+                font-size: 14px;
+            }
+
+            .curriculum .fila .item p{
+                font-size: 13px;
             }
         }
