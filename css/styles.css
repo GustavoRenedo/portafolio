@@ -1,5 +1,6 @@
         :root {
             --primary-color: #38b6a1;
+            --primary-background:#f0f0f0c7;
         }
 
         * {
@@ -214,7 +215,7 @@
             color: var(--primary-color);
         }
 
-        #proyectos .contenido .presentacion{
+        #proyectos .contenido .presentacion {
             position: absolute;
             font-size: 50px;
             top: 50%;
@@ -237,6 +238,7 @@
         /* *********************/
 
         #sobremi {
+            
             max-width: 1100px;
             margin: auto;
             padding: 100px 15px;
@@ -312,6 +314,135 @@
             color: #fff;
         }
 
+
+        /**********************/
+        /* SECCION CURRICULUM */
+        /**********************/
+        .curriculum {
+            background-color: var(--primary-background);
+            color: #000000;
+            padding: 50px 20px;
+        }
+
+        .curriculum .contenido-seccion {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .curriculum h2 {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 25px;
+            margin-bottom: 12px;
+
+        }
+
+        .curriculum .fila {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .curriculum .fila .col {
+            width: 49%;
+            padding: 0 20px;
+        }
+
+
+        .curriculum .fila .izquierda {
+            border-right: 2px solid rgb(124, 182, 182);
+        }
+
+        .curriculum .fila .derecha {
+            border-left: 2px solid rgb(124, 182, 182);
+        }
+
+        .curriculum .fila .item {
+            padding: 25px;
+            margin-bottom: 30px;
+            background-color: rgb(17, 43, 43);
+            position: relative;
+        }
+
+        .curriculum .fila .item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .curriculum .fila .item .casa {
+            color: var(--primary-color);
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .curriculum .fila .item .fecha {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .curriculum .fila .item p {
+            line-height: 24px;
+            color: rgb(255, 255, 255);
+            text-align: justify;
+        }
+
+        .curriculum .fila .izq {
+            border-right: 2px solid var(--primary-color);
+            margin-right: 20px;
+        }
+
+        .curriculum .fila .der {
+            border-left: 2px solid var(--primary-color);
+            margin-left: 20px;
+        }
+
+        .curriculum .fila .item .conectori {
+            height: 2px;
+            background-color: var(--primary-color);
+            width: 47px;
+            position: absolute;
+            top: 50%;
+            right: -47px;
+            z-index: 5;
+        }
+
+        .curriculum .fila .item .conectori .circuloi {
+            display: block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            float: right;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .curriculum .fila .item .conectord {
+            height: 2px;
+            background-color: var(--primary-color);
+            width: 47px;
+            position: absolute;
+            top: 50%;
+            left: -47px;
+            z-index: 5;
+        }
+
+        .curriculum .fila .item .conectord .circulod {
+            display: block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            float: left;
+            position: relative;
+            bottom: 4px;
+        }
+
+
+
         /* *********************/
         /* seccion S E R V I C I O S */
         /* *********************/
@@ -319,7 +450,7 @@
         #servicios {
             padding: 100px 15px;
             text-align: center;
-            background-color: #f3f3f3;
+            background-color: var(--primary-background);
         }
 
         #servicios .titulo-seccion {
@@ -427,35 +558,42 @@
             margin: 10px 0px;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso1 {
+        .contenedor-skills .skill .barra .barra-progreso95 {
             background-color: #fff;
             width: 95%;
             height: 6px;
-            animation: progreso1 2s forwards;
+            animation: progreso95 2s forwards;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso2 {
+        .contenedor-skills .skill .barra .barra-progreso90 {
             background-color: #fff;
             width: 90%;
             height: 6px;
-            animation: progreso2 2s forwards;
+            animation: progreso90 2s forwards;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso3 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso3 2s forwards;
-        }
-
-        .contenedor-skills .skill .barra .barra-progreso4 {
+        .contenedor-skills .skill .barra .barra-progreso85 {
             background-color: #fff;
             width: 85%;
             height: 6px;
-            animation: progreso4 2s forwards;
+            animation: progreso85 2s forwards;
         }
 
-        @keyframes progreso1 {
+        .contenedor-skills .skill .barra .barra-progreso80 {
+            background-color: #fff;
+            width: 80%;
+            height: 6px;
+            animation: progreso80 2s forwards;
+        }
+
+        .contenedor-skills .skill .barra .barra-progreso75 {
+            background-color: #fff;
+            width: 75%;
+            height: 6px;
+            animation: progreso75 2s forwards;
+        }
+
+        @keyframes progreso95 {
             0% {
                 width: 0;
             }
@@ -465,7 +603,7 @@
             }
         }
 
-        @keyframes progreso2 {
+        @keyframes progreso90 {
             0% {
                 width: 0;
             }
@@ -475,23 +613,33 @@
             }
         }
 
-        @keyframes progreso3 {
-            0% {
-                width: 0;
-            }
-
-            100% {
-                width: 90%;
-            }
-        }
-
-        @keyframes progreso4 {
+        @keyframes progreso85 {
             0% {
                 width: 0;
             }
 
             100% {
                 width: 85%;
+            }
+        }
+
+        @keyframes progreso80 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 80%;
+            }
+        }
+
+        @keyframes progreso75 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 75%;
             }
         }
 
@@ -696,6 +844,7 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
 
+
         @media screen and (max-width: 1100px) {
             #servicios .fila .servicio ul {
                 flex-direction: column;
@@ -708,6 +857,21 @@
                 text-align: center;
             }
 
+        }
+
+        @media screen and (max-width:1020px){
+            #inicio .contenido header .contenido-header {
+                max-width: 90%;
+            }
+        
+            #inicio .contenido header .contenido-header h2 {
+                font-size: 17px;
+            }
+        
+            #inicio .contenido header .contenido-header nav ul li a {
+                font-size: 14px;
+                margin: 0 8px;
+            }
         }
 
         @media screen and (max-width: 900px) {
@@ -745,7 +909,8 @@
             #inicio .contenido .presentacion h1 {
                 font-size: 40px;
             }
-            #proyectos .contenido .presentacion{
+
+            #proyectos .contenido .presentacion {
                 font-size: 30px;
             }
 
@@ -811,6 +976,16 @@
             .container-form {
                 grid-template-columns: 1fr;
             }
+
+            .curriculum .fila{
+                display: block;
+            }
+            .curriculum .fila .col{
+                width: 90%;
+            }
+            .curriculum .fila .derecha{
+                margin-left: 20px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -818,7 +993,7 @@
                 grid-template-columns: 1fr;
                 grid-gap: 20px;
             }
-            
+
 
             .container-form form .campo,
             .container-form form textarea {
