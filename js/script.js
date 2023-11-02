@@ -74,6 +74,7 @@ function seleccionar(link) {
     opciones[2].className = "";
     opciones[3].className = "";
     opciones[4].className = "";
+    opciones[5].className = "";
     link.className = "seleccionado";
 
     //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
