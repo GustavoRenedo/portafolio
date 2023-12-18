@@ -91,7 +91,7 @@ function responsiveMenu() {
     if (x.className === "") {
         x.className = "responsive";
         // Cambiar el ícono a "X" cuando se abre el menú
-        icono.innerHTML = '<i class="fa-solid fa-times"></i>';
+        icono.innerHTML = '<i class="fa-solid fa-bars"></i>';
     } else {
         x.className = "";
         // Cambiar el ícono a la barra cuando se cierra el menú
