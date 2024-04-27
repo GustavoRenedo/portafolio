@@ -322,7 +322,6 @@
         /* SECCION CURRICULUM */
         /**********************/
         .curriculum {
-            background-color: var(--primary-background);
             color: #000000;
             padding: 50px 20px;
         }
