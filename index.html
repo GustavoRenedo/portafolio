@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKLZDED12D"></script>
@@ -10,10 +10,10 @@
 
         gtag('config', 'G-GKLZDED12D');
     </script>
-
     <meta charset="UTF-8">
-    <title>Gustavo López - Web Developer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo López | Desarrollador Web</title>
     <!--Component: Meta-->
     <meta name="description"
         content="Descubre soluciones web creativas y eficientes. Desarrollo web innovador a medida para tu éxito en línea.">
@@ -22,590 +22,231 @@
     <!--Palabras clave-->
     <meta name="keywords"
         content="portafolio, desarrollador web, diseño web, programación web, desarrollo fontend, desarrollo backend, sitios web, html, css, javascript, portafolio de proyectos, aplicaciones web, personalizacion web, programador web, programador font-end, programador back-end, bases de datos, web, desarrollo, api, diseño">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <meta property="og:description"
         content="Descubre soluciones web creativas y eficientes. Desarrollo web innovador a medida para tu éxito en línea.">
 
     <meta property="og:image" content="img/1702857310183.jpg">
+    <link rel="icon" href="https://gustavolopezrenedo.netlify.app/img/logo_gustavo_lopez_renedo.ico"
+        type="image/x-icon">
 
-    <link rel="stylesheet" href="libs/fontawesome-free-6.4.2-web/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="https://gustavolopezrenedo.netlify.app/img/logo_gustavo_lopez_renedo.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--Transiciones-->
-    <script src="libs/scroll-reveal/lib-scroll-reveal.js"></script>
+    <link rel="icon" href="https://gustavolopezrenedo.netlify.app/img/logo_gustavo_lopez_renedo.ico"
+        type="image/x-icon">
 </head>
 
 <body>
 
-    <style>
-        #particles-js {
-            background-color: rgb(255, 255, 255);
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            z-index: -1;
-        }
-    </style>
-    <div id="particles-js"></div>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h2>Gustavo López</h2>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)"><i
-                                        class="fa-solid fa-house"></i> INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)"><i class="fa-solid fa-user"></i> SOBRE
-                                    MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)"><i class="fa fa-cogs"></i>
-                                    SERVICIOS</a></li>
-                            <li><a href="#curriculum" onclick="seleccionar(this)"><i class="fa fa-history"></i> TRABAJOS</a>
-                            </li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)"><i class="fa-solid fa-briefcase"></i>
-                                    PORTAFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)"><i class="fa fa-address-book"></i>
-                                    CONTACTO</a></li>
+    <header class="header">
+        <a href="" class="logo">Gustavo López<span class="animate" style="--1:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--1:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">Home</a>
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#recorrido">Servicios</a>
+            <a href="#portafolio">Trabajos</a>
+            <a href="#contacto">Contacto</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--1:2;"></span>
+        </nav>
+    </header>
 
 
-                        </ul>
-                    </nav>
-
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-
-                </div>
-            
-            </header>
-            <div class="presentacion ocultar"> <!--CAMBIO AQUI-->
-                <p class="bienvenida">Bienvenidos a mí web</p>
-                <h1>Soy <span>Gustavo López</span>, Desarrollador Web</h1>
-                <div class="conocimientos">Conocimientos en <span id="dynamicText"></span></div>
-                <p class="descripcion">Entusiasta desarrollador, fusionando creatividad y código para experiencias
-                    digitales impresionantes. Innovador y eficiente.</p>
-
-                <a href="#portfolio"><i class="fa-solid fa-briefcase fa-bounce"></i> Portafolio</a>
+    <section class="home show-animate" id="inicio">
+        <div class="home-content">
+            <h1>¡Hola! Soy <span>Gustavo</span><span class="animate" style="--1:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Desarrollador Web</h3>
+                <span class="animate" style="--1:3;"></span>
+            </div>
+            <p>Ingeniero en Tecnologías de la Información con 2 años de experiencia desarrollando soluciones de TI,
+                especializado en la creación de páginas, sitios y aplicaciones web eficientes y seguras.
+                <span class="animate" style="--1:4;"></span>
+            </p>
+            <div class="btn-box">
+                <a href="#" class="btn"><i class='bx bxs-briefcase-alt-2 bx-flashing'></i> Proyectos</a>
+                <a href="https://api.whatsapp.com/send?phone=5217228447442" class="btn" target="_blank"><i
+                        class='bx bxl-whatsapp bx-flashing'></i> Contáctame</a>
+                <span class="animate" style="--1:5;"></span>
             </div>
         </div>
-    </section>
 
-    <!-- SECCION S O B R E M I -->
-    <section id="sobremi" class="ocultar"> <!--CAMBIO AQUI-->
-        <div class="contenedor-foto">
-            <img src="img/foto_perfil_Gustavo_Lopez_TI.webp"
-                alt="foto del propietario, el portafolio de proyectos de un desarrollador web egresado de Ingenieria en Tecnologicas de la informacion">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
-            <h2>Soy <span>Gustavo López Renedo</span> </h2>
-            <h3><b>Ing. en Tecnologías de la Información</b>, Área entornos virtuales y negocios digitales </h3>
-            <p>¡Hola! Soy Gustavo, un apasionado Ingeniero en Tecnologías de la Información con una sólida experiencia en el desarrollo de soluciones tecnológicas innovadoras. Mi enfoque se centra en crear experiencias web impactantes y funcionales.</p>
-            
-            <p>Con una mentalidad orientada a resultados, estoy comprometido a generar soluciones que no solo cumplan con los requisitos técnicos, sino que también agreguen valor tangible a las organizaciones para las que trabajo. Mi dedicación a la aplicación de las mejores prácticas en cada etapa del desarrollo garantiza la entrega de productos de alta calidad y la satisfacción del cliente</p>
-            
-            <p>Estoy emocionado por la oportunidad de seguir creciendo y aprendiendo en este apasionante campo, y espero poder contribuir con mi experiencia y habilidades a futuros proyectos que desafíen los límites de la tecnología y la innovación.</p>
-            <a href="https://gustavolopezrenedo.netlify.app/archivos/CV_ING_TI_Gustavo_Lopez_Renedo.pdf" target="_blank">Descarga mi CV</a>
-        </div>
+        <span class="home-imgHover"></span>
+        <span class="animate home-img" style="--1:7;"></span>
     </section>
 
 
-    <!-- SECCION S E R V I C I O S -->
-    <section id="servicios">
-        <h3 class="titulo-seccion ocultar">MIS SERVICIOS1</h3>
-        <div class="fila ocultar">
-            <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Innovación |</li>
-                    <li>Usabilidad</li>
-                    <li>| Optimización</li>
-                </ul>
-                <p>Sitios web personalizados y optimizados para brindar una experiencia de usuario excepcional. Diseños
-                    son completamente responsive y se centran en la optimización para motores de búsqueda (SEO) para
-                    asegurar una presencia en línea efectiva y exitosa.</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
-                <h4>Programación PHP</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Sitio dinámico |</li>
-                    <li>Personalización</li>
-                    <li>| Seguridad</li>
-                </ul>
-                <p>Brindo soluciones de alta calidad para el desarrollo de sitios web dinámicos y aplicaciones
-                    personalizadas. Con el uso de un lenguaje de programación versátil, para crear soluciones que
-                    destacan por su calidad y seguridad.
-                </p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
-                <h4>Posicionamiento SEO</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Optimización |</li>
-                    <li>Palabras clave</li>
-                    <li>| Clasificación</li>
-                </ul>
-                <p>El Posicionamiento SEO es una estrategia fundamental para aumentar la visibilidad de tu sitio web en
-                    los motores de búsqueda. Con dicho servicio te ayudare a mejorar tu presencia en línea y atraer a
-                    más usuarios interesados en tus productos o servicios.</p>
 
+    <section class="about" id="sobremi">
+        <h2 class="heading">Sobre <span>Mí</span><span class="animate scroll" style="--1:1;"></span></h2>
+        <div class="about-img">
+            <img src="home-perfil.jpg" alt="">
+            <span class="animate scroll" style="--1:2;"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Desarrollador Web<span class="animate scroll" style="--1:3;"></span></h3>
+            <p>¡Hola! Soy Gustavo, un apasionado Ingeniero en Tecnologías de la Información con una sólida experiencia
+                en el desarrollo de soluciones tecnológicas innovadoras. Mi enfoque se centra en crear experiencias web
+                impactantes y funcionales. <br> <br>
+                Con una mentalidad orientada a resultados, estoy comprometido a generar soluciones que no solo cumplan
+                con los requisitos técnicos, sino que también agreguen valor tangible a las organizaciones para las que
+                trabajo.
+                <span class="animate scroll" style="--1:4;"></span>
+            </p>
+            <div class="btn-box btns">
+                <a href="archivos/CV_INGENIERO_TI_Gustavo_Lopez_Renedo.pdf" class="btn" target="_blank">Descargar CV</a>
+                <span class="animate scroll" style="--1:5;"></span>
             </div>
         </div>
-        <div class="fila ocultar">
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-database"></i></span>
-                <h4>Alojamiento de Sitios</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Hosting |</li>
-                    <li>Disponibilidad</li>
-                    <li>| Optmización SEO</li>
-                </ul>
-                <p>Hosting web confiable y de alta disponibilidad para asegurar que tu sitio esté en línea en todo
-                    momento. Además, asegurar la optimización de tu sitio para un mejor rendimiento en los motores de
-                    búsqueda, lo que mejora la visibilidad y el alcance en línea de tu negocio.</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-palette"></i></span>
-                <h4>Diseñador Gráfico</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Creatividad |</li>
-                    <li>Identidad</li>
-                    <li>| Optmización SEO</li>
-                </ul>
-                <p>Creación de diseños gráficos creativos y la construcción de una identidad visual impactante para tu
-                    marca. optimización en imágenes para SEO, mejorando la experiencia del usuario y la visibilidad de
-                    tu sitio en los motores de búsqueda.
-                </p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
-                <h4>Consultor Externo</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Asesorias |</li>
-                    <li>Optmización</li>
-                    <li>| Estrategias SEO</li>
-                </ul>
-                <p>Asesoría estratégica en marketing digital para impulsar tu negocio en línea. Optimización de tus
-                    procesos empresariales y desarrollar estrategias de SEO personalizadas para mejorar tu visibilidad
-                    en los motores de búsqueda y alcanzar tus objetivos en línea.
-                </p>
-            </div>
-        </div>
+
     </section>
 
-    <!--CURRICULUM-->
 
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2 class="titulo-seccion">MIS TRABAJOS</h2>
-            <div class="fila">
-                <div class="col izquierda">
+    <!--Experiencia y educacion-->
 
-                    <div class="item izq">
-                        <h4>Desarrollo de Sitio Web y Sistema Integral de Despacho Jurídico</h4>
-                        <span class="casa">TIDAI S.A DE C.V</span>
-                        <br>
-                        <!--<span class="fecha">2005 - 2008</span>-->
-                        <p>-Realice el diseño y desarrollo de sitio web oficial de https://tidaimx.com</p>
-                        <p>-Desarrolle un sistema integral de despacho jurídico para el registro y seguimiento de casos.</p>
-                        
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Sistema escolar de acceso a calificaciónes y horarios</h4>
-                        <span class="casa">Instituto Universitario UNIEM</span>
-                        <br>
-                        <!--<span class="fecha">2005 - 2008</span> -->
-                        <p>-Participé en la creación de un sistema escolar personalizado que permitió a los estudiantes
-                            de la Universidad UNIEM acceder a sus calificaciones y horarios de manera eficiente.</p>
-                        <p>-Facilité la experiencia de los estudiantes al proporcionar una plataforma en línea para
-                            consultar información académica crucial.</p>
+    <section class="education" id="recorrido">
+        <h2 class="heading"> Mi <span> Recorrido</span><span class="animate scroll" style="--1:1;"></span></h2>
+        <div class="education-row">
 
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="education-column">
+                <h3 class="title">Mi <span>Experiencia</span><span class="animate scroll" style="--1:2;"></span></h3>
+                <div class="education-box">
 
-                <div class="col derecha">
-
-                    <div class="item der">
-
-                        <h4>Manual de usuario de sistema ERP y creacion de iconos 3D sin Copyright</h4>
-                        <span class="casa">Raptor Web Experience</span>
-                        <br>
-                        <!--<span class="fecha">2005 - 2008</span>-->
-                        <p>-Diseñé y produje un conjunto de iconos 3D originales y libres de derechos de autor para su
-                            uso en aplicaciones y sitios web.</p>
-                        <p>-Contribuí a la documentación técnica y al diseño gráfico, asegurando una comunicación
-                            efectiva y una identidad visual coherente.</p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>ene 2024 - jun 2024</div>
+                            <h3>Desarrollador Web Jr - TIDAI S.A DE C.V</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
                         </div>
                     </div>
 
-                    <div class="item der">
-                        <h4>Inventario Web con sistema de reserva de salas</h4>
-                        <span class="casa">Universidad Tecnologíca de Zinacantepec</span>
-                        <br>
-                        <!--<span class="fecha">2005 - 2008</span> -->
-                        <p>-Mejore la eficiencia en la gestión de recursos y la planificación de las clases
-                            para el personal docente.</p>
-                        <p>-Utilicé tecnologías web y de seguridad para poder garantizar un funcionamiento
-                            optimo en el sistema</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>ene 2024 - jun 2024</div>
+                            <h3>Diseñador Web - Raptor Web Experience</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
                         </div>
                     </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>ene 2024 - jun 2024</div>
+                            <h3>Desarrollador Web Jr y Facilitador de capacitación - UTZIN</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>ene 2024 - jun 2024</div>
+                            <h3>Desarrollador Web Jr - UNIEM</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--1:3;"></span>
                 </div>
             </div>
+
+
+            <div class="education-column">
+                <h3 class="title">Mi <span>Educación</span> <span class="animate scroll" style="--1:5;"></span></h3>
+                <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>sep 2022 - may 2024</div>
+                            <h3>Ing. Entornos Virtuales y Negocios Digitales - UTZIN</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"> <i class="bx bxs-calendar"></i>ago 2019 - oct 2021</div>
+                            <h3>TSU Tecnologias de la Información - UTZIN</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error quas, recusandae
+                                pariatur iusto magni aspernatur ex expedita perferendis necessitatibus!</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--1:6;"></span>
+
+                </div>
+
+
+            </div>
+
         </div>
     </section>
 
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>HABILIDADES </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>HTML & CSS</p>
-                <span class="porcentaje">95%</span>
-            </div>
+    <section class="skills"></section>
 
+    <!--Contacto-->
 
-            <div class="barra">
-                <div class="barra-progreso95" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Bootstrap</p>
-                <span class="porcentaje">95%</span>
-            </div>
+    <section class="contact" id="contacto">
+        <h2 class="heading">Contáctame<span class="animate scroll" style="--1:1;"></span></h2>
 
-            <div class="barra">
-                <div class="barra-progreso95" id="ps"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>JavaScript</p>
-                <span class="porcentaje">80%</span>
-            </div>
-
-            <div class="barra">
-                <div class="barra-progreso80" id="js"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>PHP</p>
-                <span class="porcentaje">85%</span>
-            </div>
-
-            <div class="barra">
-                <div class="barra-progreso85" id="php"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Databases (MySQL, PostgreSQL)</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="barra-progreso90" id="bd"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Photoshop</p>
-                <span class="porcentaje">80%</span>
-            </div>
-
-            <div class="barra">
-                <div class="barra-progreso80" id="photoshop"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>APIs</p>
-                <span class="porcentaje">75%</span>
-            </div>
-
-            <div class="barra">
-                <div class="barra-progreso75" id="photoshop"></div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio" class="ocultar">
-        <h3 class="titulo-seccion">MI PORTAFOLIO</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="#">
-                    <img src="img/sistema_integral_despacho_juridico.jpg"
-                        alt="Sistema integral Despacho Juridico">
-                </a>
-                <div class="info">
-                    <h4>Sistema para Despacho Jurídico</h4>
-                    <p>Sistema Web</p>
+        <form action="#" autocomplete="off" netlify>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <span class="focus"></span>
                 </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="https://tidaimx.com">
-                    <img src="img/sitio_web_desarrollo_tidai.jpg "
-                        alt="Sitio web TIDAI S.A DE C.V ">
-                </a>
-                <div class="info">
-                    <h4>Sitio web</h4>
-                    <p>Diseño Web</p>
+                <div class="input-field">
+                    <input type="text" name="email" placeholder="Correo o Telefono" required>
+                    <span class="focus"></span>
                 </div>
+                <span class="animate scroll" style="--1:3;"></span>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="#">
-                    <img src="img/inventario-web-escolar-desarrollo-web.jpg"
-                        alt="programación y diseño de carrito de compras">
-                </a>
-                <div class="info">
-                    <h4>Inventario Escolar</h4>
-                    <p>Desarrollo Web</p>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="tema" placeholder="Asunto" required>
+                    <span class="focus"></span>
                 </div>
+                <span class="animate scroll" style="--1:5;"></span>
             </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="#">
-                    <img src="img/carrito-de-compras-desarrollo-web.jpg"
-                        alt="programación y diseño de carrito de compras">
-                </a>
-                <div class="info">
-                    <h4>Carrito de compras</h4>
-                    <p>Desarrollo web</p>
-                </div>
+
+            <div class="textarea-field">
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                <span class="focus"></span>
+                <span class="animate scroll" style="--1:7;"></span>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="#">
-                    <img src="img/proximamente-proyectos.jpg" alt="Proximamente">
-                </a>
-                <div class="info">
-                    <h4>Tienda Virtual</h4>
-                    <p>Sistema Web</p>
-                </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn" name="enviar">Enviar</button>
+                <span class="animate scroll" style="--1:9;"></span>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="#">
-                    <img src="img/proximamente-proyectos.jpg" alt="Proximamente">
-                </a>
-                <div class="info">
-                    <h4>Proyecto 6</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
+        </form>
     </section>
 
-    <!-- SECCTION C O N T A C T O -->
-    <div id="contacto">
+    <!--FOOTER-->
 
-        <div class="medio-contacto">
-            <h3 class="titulo-seccion">ENVIAME UN MENSAJE</h3>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 Gustavo López | Todos los derechos reservados</p>
+            <span class="animate scroll" style="--1:1;"></span>
         </div>
-        <br>
-        <div class="container-form">
 
-            <form action="#" autocomplete="off" netlify>
-                <input type="text" name="nombre" placeholder="Tu nombre" class="campo" required>
-                <input type="emal" name="email" placeholder="Tu correo" class="campo" required>
-                <input type="text" name="tema" placeholder="Asunto" class="campo" required>
-                <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
-                <br>
-                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
-            </form>
-
-            <div class="info-form">
-                <h2><i class="fa-solid fa-address-book fa-xs"></i> Contacto</h2>
-                <p class="oracion">Si requieres asistencia en cualquier proyecto, no dudes en comunicarte conmigo a
-                    través de los
-                    siguientes
-                    medios de contacto.</p>
-                <p class="contact"><i class="fa-brands fa-whatsapp"></i> +52 1 (722) 844 7442</p>
-                <p class="contact"><i class="fa-solid fa-envelope"></i> gustavolopezrenedo@gmail.com</p>
-                <p class="contact"><i class="fa-solid fa-map"></i> EDOMEX, Toluca, México</p>
-
-                <div class="redes-sociales">
-                    <a href="https://github.com/GustavoRenedo"><i class="fa-brands fa-github fa-fade"></i></a>
-                    <a href="https://www.facebook.com/gustavo.lopes1416"><i
-                            class="fa-brands fa-facebook fa-fade"></i></a>
-                    <a href="https://www.instagram.com/gus.lopez_16/"><i class="fa-brands fa-instagram fa-fade"></i></a>
-                </div>
-            </div>
-
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+            <span class="animate scroll" style="--1:3;"></span>
         </div>
-    </div>
-
-    <!-- SECCION FOOTER -->
-    <footer>
-        <p>© Copyright 2024. Gustavo López Renedo v0.0.45</p>
-        <br>
-        <p>Todos los derechos reservados.</p>
-        <br>
-
     </footer>
 
-    <!-- Particles.js-->
-    <script src="js/particles.min.js"></script>
-
-    <!-- Particles.js Config-->
-    <script>
-
-        particlesJS(
-            {
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#000000"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.22843639228042528,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 3,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#000000",
-                        "opacity": 0.1496652225285545,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "window",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "grab"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 131.61358252171627,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true
-            }
-        )
-
-
-    </script>
-
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
