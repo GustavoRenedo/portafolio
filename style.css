@@ -12,10 +12,13 @@
 }
 
 :root {
-    --bg-color: #170524; /*081b29*/
-    --second-bg-color: #2c093f; /*112e42*/
-    --text-color: #ededed; 
-    --main-color: #9b5de5;  /*00abf0*/
+    --bg-color: #170524;
+    /*081b29*/
+    --second-bg-color: #2c093f;
+    /*112e42*/
+    --text-color: #ededed;
+    --main-color: #9b5de5;
+    /*00abf0*/
 }
 
 html {
@@ -54,7 +57,7 @@ body {
     font-weight: 600;
 }
 
-.navbar{
+.navbar {
     position: relative;
 }
 
@@ -128,7 +131,7 @@ section {
     background-position: -33rem 0;
 }
 
-.home.show-animate .home-content .text-animate h3{
+.home.show-animate .home-content .text-animate h3 {
     animation: homeBgText 5s linear infinite;
     animation-delay: 2s;
 }
@@ -182,7 +185,6 @@ section {
     overflow: hidden;
     transition: .5s;
     padding: 10px;
-    
 }
 
 .btn-box .btn:hover {
@@ -395,6 +397,7 @@ section {
     font-size: 2.6rem;
     margin: 0 0 1.5rem 2rem;
 }
+
 .education span {
     color: var(--main-color);
 }
@@ -473,7 +476,7 @@ section {
     padding-bottom: 7rem;
 }
 
-.contact h2{
+.contact h2 {
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
@@ -548,6 +551,78 @@ section {
     cursor: pointer;
 }
 
+/************************************PAGE 1: TRABAJOS*************************************************/
+
+.trabajos{
+    display: flex;
+    background: var(--second-bg-color);
+    flex-direction: column;
+    
+}
+
+.trabajos span {
+    color: var(--main-color);
+}
+
+
+
+
+/*******************************Page 2: MIS TRABAJOS***************************************/
+
+.trabajos-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    border-radius: .6rem;
+}
+
+.trabajos-page span {
+    color: var(--main-color);
+}
+
+.contained1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.contained1 .cards {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    border-radius: .8rem;
+}
+
+.contained1 .cards img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contained1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .contained1 {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+}
+
+
+
+
 
 /***************************************** FOOTER *********************************************/
 
@@ -610,7 +685,7 @@ section {
 
 
 /*Animaciones*/
-.animate{
+.animate {
     position: absolute;
     top: 0;
     right: 0;
@@ -619,20 +694,20 @@ section {
     background: var(--bg-color);
     z-index: 98;
 }
-.animate .home-img{
+
+.animate .home-img {
     width: 50%;
 }
 
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
-.home.show-animate .animate
-{
+.home.show-animate .animate {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
 
-.animate.scroll{
+.animate.scroll {
     transition: 1s ease;
     transition-delay: calc(.3s / var(--i));
     animation: none;
@@ -643,18 +718,20 @@ section:nth-child(odd) .animate.scroll,
     background: var(--second-bg-color);
 }
 
-.education .education-box .animate.scroll{
+.education .education-box .animate.scroll {
     width: 105%;
 }
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
+.trabajos-page.show-animate .animate.scroll,
+.trabajos.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll
-{
-    transition-delay:calc(.3s * var(--i));
+.footer.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
     width: 0;
 }
+
 /*******************************RESPONSIVE************************************/
 
 @media (max-width: 1200px) {
@@ -788,6 +865,10 @@ section:nth-child(odd) .animate.scroll,
         padding: 10rem 4% 5rem 5%;
     }
 
+    .trabajos-page {
+        padding: 10rem 4% 5rem 5%;
+    }
+
     .contact form .input-box .input-field {
         width: 100%;
     }
@@ -842,15 +923,17 @@ section:nth-child(odd) .animate.scroll,
         width: 100%;
         opacity: 1;
     }
+
     75%,
-    81%{
+    81% {
         opacity: 0;
     }
 
 }
+
 @keyframes showRight {
-    100%{
+    100% {
         width: 0;
     }
-    
+
 }
