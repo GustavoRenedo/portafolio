@@ -605,6 +605,7 @@ section {
 }
 
 .contained1 {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -617,6 +618,10 @@ section {
     padding: 10px;
     text-align: center;
     border-radius: .8rem;
+
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contained1 .cards img {
@@ -643,6 +648,19 @@ section {
     padding: 5px;
     border-bottom-left-radius: 5px;
     
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover .card-text {
+    background-color: var(--main-color); /* Change background on hover */
+}
+
+.card-text {
+    transition: background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
