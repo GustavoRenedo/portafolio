@@ -329,19 +329,34 @@ section {
 
 .about-content {
     flex: 2;
-    text-align: left;
+    position: relative;
+    padding-left: 0;
+    text-align: center; 
 }
 
 .about-content h3 {
     position: relative;
     font-size: 2.6rem;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .about-content p {
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: left;
+}
+
+
+.btn-box.btns { 
+    display: inline-block;
+    width: 15rem;
+}
+
+
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
 }
 
 
@@ -360,6 +375,12 @@ section {
 
     .about-content {
         padding-left: 0;
+        text-align: center;
+    }
+    .about-content h3 {
+        text-align: center;
+    }
+    .about-content p {
         text-align: center;
     }
 
@@ -469,6 +490,20 @@ section {
 }
 
 
+/************************************PAGE 1: TRABAJOS*************************************************/
+
+.trabajos{
+    display: flex;
+    background: var(--second-bg-color);
+    flex-direction: column;
+    text-align: center;
+}
+
+.trabajos span {
+    color: var(--main-color);
+}
+
+
 /***************************************** CONTACTO *********************************************/
 
 .contact {
@@ -549,19 +584,6 @@ section {
 
 .contact form .btn-box.btns .btn {
     cursor: pointer;
-}
-
-/************************************PAGE 1: TRABAJOS*************************************************/
-
-.trabajos{
-    display: flex;
-    background: var(--second-bg-color);
-    flex-direction: column;
-    
-}
-
-.trabajos span {
-    color: var(--main-color);
 }
 
 
