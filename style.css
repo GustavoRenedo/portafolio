@@ -680,8 +680,24 @@ section {
 }
 
 
+/***************************************** DESCRIPCIONES PROYECTOS *********************************************/
+
+.titulo-desc {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.titulo-desc span {
+    color: var(--main-color);
+}
 
 
+@media (max-width: 600px) {
+    .titulo-desc {
+        font-size: 2.5rem;
+    }
+
+}
 
 /***************************************** FOOTER *********************************************/
 
@@ -785,6 +801,7 @@ section:nth-child(odd) .animate.scroll,
 .education.show-animate .animate.scroll,
 .trabajos-page.show-animate .animate.scroll,
 .trabajos.show-animate .animate.scroll,
+.descripcion-trabajo.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
