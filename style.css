@@ -331,7 +331,7 @@ section {
     flex: 2;
     position: relative;
     padding-left: 0;
-    text-align: center; 
+    text-align: center;
 }
 
 .about-content h3 {
@@ -349,7 +349,7 @@ section {
 }
 
 
-.btn-box.btns { 
+.btn-box.btns {
     display: inline-block;
     width: 15rem;
 }
@@ -377,9 +377,11 @@ section {
         padding-left: 0;
         text-align: center;
     }
+
     .about-content h3 {
         text-align: center;
     }
+
     .about-content p {
         text-align: center;
     }
@@ -492,7 +494,7 @@ section {
 
 /************************************PAGE 1: TRABAJOS*************************************************/
 
-.trabajos{
+.trabajos {
     display: flex;
     background: var(--second-bg-color);
     flex-direction: column;
@@ -609,7 +611,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
+
 }
 
 .contained1 .cards {
@@ -647,7 +649,7 @@ section {
     font-size: 1.5rem;
     padding: 5px;
     border-bottom-left-radius: 5px;
-    
+
 }
 
 .cards:hover {
@@ -656,7 +658,8 @@ section {
 }
 
 .cards:hover .card-text {
-    background-color: var(--main-color); /* Change background on hover */
+    background-color: var(--main-color);
+    /* Change background on hover */
 }
 
 .card-text {
@@ -682,42 +685,81 @@ section {
 
 /***************************************** DESCRIPCIONES PROYECTOS *********************************************/
 
+/* Sección específica */
+section#descripcion {
+    padding: 10rem 0 2rem;
+    /* Quita el margen lateral para esta sección */
+}
+
 .titulo-desc {
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 2.3rem;
 }
 
 .titulo-desc span {
     color: var(--main-color);
 }
 
+.contenedor-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .descripcion-trabajo .img-descrip {
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Estilos para la imagen */
 .descripcion-trabajo .img-descrip img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: -18%;
 }
 
+/* Estilos para el texto */
+.descripcion-trabajo .descrip {
+    flex: 1;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-left: 9%;
+    margin-top: 5rem;
+    text-align: justify;
 
-@media (max-width: 600px) {
-    .titulo-desc {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    section#descripcion {
+        padding: 10rem 9% 2rem;
+    }
+
+    .contenedor-desc {
+        flex-direction: column;
+    }
+
+    .descripcion-trabajo .img-descrip {
+        order: 1;
+        text-align: center;
     }
 
     .descripcion-trabajo .img-descrip img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
     }
 
+    .descripcion-trabajo .descrip {
+        order: 2;
+        font-size: 1.6rem;
+        text-align: justify;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
 }
+
 
 /***************************************** FOOTER *********************************************/
 
