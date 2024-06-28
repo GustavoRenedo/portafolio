@@ -767,6 +767,14 @@ section.descripcion-trabajo {
 }
 
 /************************************ PROYECTOS UX /UI ****************************************/
+
+.diseno-trabajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
 .contenedor-diseno img {
     width: 100%;
 }
