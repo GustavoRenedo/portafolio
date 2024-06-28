@@ -686,7 +686,7 @@ section {
 /***************************************** DESCRIPCIONES PROYECTOS *********************************************/
 
 /* Sección específica */
-section#descripcion {
+section.descripcion-trabajo {
     padding: 10rem 0 2rem;
     /* Quita el margen lateral para esta sección */
 }
@@ -739,7 +739,7 @@ section#descripcion {
 
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
-    section#descripcion {
+    section.descripcion-trabajo {
         padding: 10rem 9% 2rem;
     }
 
@@ -766,6 +766,10 @@ section#descripcion {
     }
 }
 
+/************************************ PROYECTOS UX /UI ****************************************/
+.contenedor-diseno img {
+    width: 100%;
+}
 
 /***************************************** FOOTER *********************************************/
 
