@@ -730,6 +730,13 @@ section#descripcion {
 
 }
 
+.descripcion-trabajo ul.columnas {
+    columns: 2; /* Divide los elementos en dos columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+    padding-left: 0; /* Elimina el padding izquierdo predeterminado de la lista */
+    list-style-type: none; /* Elimina los estilos de viñeta de la lista */
+}
+
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
     section#descripcion {
@@ -754,7 +761,6 @@ section#descripcion {
     .descripcion-trabajo .descrip {
         order: 2;
         font-size: 1.6rem;
-        text-align: justify;
         margin-left: 0;
         margin-top: 2rem;
     }
