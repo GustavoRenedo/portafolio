@@ -770,10 +770,8 @@ section.descripcion-trabajo {
 
 .diseno-trabajo {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .contenedor-diseno img {
     width: 100%;
