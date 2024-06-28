@@ -279,7 +279,7 @@ section {
 }
 
 .home-imgHover:hover {
-    background: var(--bg-color);
+    background: #160622;
     opacity: .8;
 }
 
