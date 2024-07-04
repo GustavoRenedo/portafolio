@@ -1,4 +1,14 @@
 
+
+//Loader
+window.addEventListener('load', function () {
+    // Oculta el loader una vez que la página ha cargado
+    document.getElementById('loader').style.display = 'none';
+});
+
+
+
+
 //Menu responsive
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -109,3 +119,6 @@ function easeInOutQuad(t, b, c, d) {
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
 }
+
+
+
