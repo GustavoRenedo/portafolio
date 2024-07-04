@@ -37,6 +37,7 @@ body {
 
 .loader-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -44,13 +45,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white; /* Fondo semitransparente opcional */
-    z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+    background-color: var(--bg-color);
+    /* Fondo semitransparente opcional */
+    z-index: 9999;
+    /* Asegúrate de que esté por encima de otros elementos */
 }
 
 .loader {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     position: relative;
     animation: spin 1.2s linear infinite;
@@ -66,16 +69,23 @@ body {
 .loader::before {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, #f0c 0%, #80f 100%);
+    background-image: linear-gradient(0deg, #9b5de5 0%, #ededed 100%);
 }
 
 .loader::after {
     width: 80%;
     height: 80%;
-    background-color: white;
+    background-color: var(--bg-color);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.loading-text {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
 }
 
 @keyframes spin {
@@ -787,10 +797,14 @@ section.descripcion-trabajo {
 }
 
 .descripcion-trabajo ul.columnas {
-    columns: 2; /* Divide los elementos en dos columnas */
-    column-gap: 20px; /* Espacio entre las columnas */
-    padding-left: 0; /* Elimina el padding izquierdo predeterminado de la lista */
-    list-style-type: none; /* Elimina los estilos de viñeta de la lista */
+    columns: 2;
+    /* Divide los elementos en dos columnas */
+    column-gap: 20px;
+    /* Espacio entre las columnas */
+    padding-left: 0;
+    /* Elimina el padding izquierdo predeterminado de la lista */
+    list-style-type: none;
+    /* Elimina los estilos de viñeta de la lista */
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -829,6 +843,7 @@ section.descripcion-trabajo {
     align-items: center;
     flex-direction: column;
 }
+
 .contenedor-diseno img {
     width: 100%;
 }
