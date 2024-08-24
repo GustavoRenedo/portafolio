@@ -83,6 +83,9 @@ async function activateXR() {
     flower = gltf.scene;
   });
 
+  // Track whether the model has been placed.
+  let modelPlaced = false;
+
   // Create a render loop that allows us to draw on the AR view.
   const onXRFrame = (time, frame) => {
     // Queue up the next draw request.
@@ -121,10 +124,11 @@ async function activateXR() {
 
   // Add interactions when selecting.
   session.addEventListener("select", (event) => {
-    if (flower) {
+    if (flower && !modelPlaced) {
       const clone = flower.clone();
       clone.position.copy(reticle.position);
       scene.add(clone);
+      modelPlaced = true; // Ensure the model is only placed once
     }
   });
 }
