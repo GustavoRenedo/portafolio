@@ -61,7 +61,7 @@ async function activateXR() {
   let flower;
   loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
     flower = gltf.scene;
-    flower.position.set(0, 0, -1); // Position the model in front of the viewer
+    flower.position.set(0, -0.5, -1); // Position the model in front of the viewer
     scene.add(flower);
   });
 
