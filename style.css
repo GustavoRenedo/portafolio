@@ -201,8 +201,8 @@ section {
 }
 
 .home.show-animate .home-content .text-animate h3 {
-    animation: homeBgText 5s linear infinite;
-    animation-delay: 2s;
+    animation: homeBgText 3s linear infinite;
+    animation-delay: 1s;
 }
 
 .home-content .text-animate h3::before {
@@ -1123,18 +1123,12 @@ section:nth-child(odd) .animate.scroll,
 /**************************************ANIMACIONES*****************************************/
 
 @keyframes homeBgText {
-
-    0%,
-    10%,
-    100% {
+    0% {
         background-position: -33rem 0;
     }
-
-    65%,
-    85% {
-        background-position: 0 0;
+    100% {
+        background-position: 33rem 0;
     }
-
 }
 
 @keyframes homeCursorText {
