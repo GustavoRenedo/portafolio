@@ -577,6 +577,14 @@ section {
 
 /***************************************** CONTACTO *********************************************/
 
+.text-center{
+    text-align: center;
+    font-size: 14px;
+}
+.text-center a{
+    color: white;
+    text-decoration: underline;
+}
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
