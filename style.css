@@ -156,7 +156,7 @@ section {
     align-items: center;
     padding: 0 9%;
     height: 100vh;
-    background: url('fondo-gustavo.webp') no-repeat;
+    background: url('img/fondo-portafolio-web.webp') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -336,21 +336,7 @@ section {
 
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
 
-}
-
-.home-imgHover:hover {
-    background: #160622;
-    opacity: .8;
-}
 
 
 /************************************Sobre Mi*****************************************/
@@ -1054,12 +1040,6 @@ section:nth-child(odd) .animate.scroll,
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
-    }
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
     }
 
     .footer {

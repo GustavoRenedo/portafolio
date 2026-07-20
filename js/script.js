@@ -59,39 +59,6 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
 
-//Scroll suave y animado para PC
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Detectar si el dispositivo es móvil
-    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-
-    if (!isMobile) {
-        // Solo aplicar el scroll suave si no es un dispositivo móvil
-        document.querySelectorAll('.scroll-link').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetID = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetID);
-
-                if (targetElement) {
-                    const initialScrollPosition = window.scrollY;
-                    const targetScrollPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                    const offset = 20;  // Ajusta este valor para el "scroll mínimo hacia arriba"
-                    const durationUp = 300;  // Duración del scroll hacia arriba
-                    const durationDown = 800;  // Duración del scroll hacia abajo
-
-                    // Desplazamiento mínimo hacia arriba
-                    smoothScroll(initialScrollPosition - offset, durationUp, () => {
-                        // Después de un pequeño retraso, desplazarse suavemente hacia abajo
-                        smoothScroll(targetScrollPosition, durationDown);
-                    });
-                }
-            });
-        });
-    }
-});
-
 function smoothScroll(target, duration, callback) {
     const start = window.scrollY;
     const change = target - start;
